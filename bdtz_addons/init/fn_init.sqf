@@ -10,3 +10,4 @@ If you try call compile and it all goes to shit, use execvm =P
 diag_log "Starting Custom Content PBO";
 
 [] execVM "bdtz_addons\mapcontent\gorka_military.sqf";
+[] execVM "bdtz_addons\mapcontent\bash_camp.sqf";

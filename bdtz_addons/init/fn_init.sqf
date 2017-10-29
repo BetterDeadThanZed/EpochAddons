@@ -9,5 +9,15 @@ If you try call compile and it all goes to shit, use execvm =P
 
 diag_log "Starting Custom Content PBO";
 
-[] execVM "bdtz_addons\mapcontent\gorka_military.sqf";
-[] execVM "bdtz_addons\mapcontent\bash_camp.sqf";
+switch (toLower worldName) do
+{
+    case "chernarusredux":
+	{ 
+		[] execVM "bdtz_addons\mapcontent\chernarusredux\gorka_military.sqf";
+		[] execVM "bdtz_addons\mapcontent\chernarusredux\bash_camp.sqf";
+	};	
+    case "altis":
+	{ 
+		[] execVM "bdtz_addons\mapcontent\altis\melanera_base.sqf";
+	};	
+};	
